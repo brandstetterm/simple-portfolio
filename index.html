@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Manuel Brandstetter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Manuel Brandstetter is a software developer based in Munich." />
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+      :root {
+        --text-color-heading: #1f1f1f;
+        --text-color-body: #334155;
+        --text-color-gray: #6b7280;
+      }
+
+      * {
+        margin: 0;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+        font-size: 1rem;
+        background-color: #f5f5f4;
+        font-family: "PT Serif", serif;
+      }
+
+      main {
+        max-width: 600px;
+      }
+
+      h1, h2 {
+        color: var(--text-color-heading);
+        margin: 1.5em 0 0.5em;
+      }
+
+      h1 {
+        font-size: clamp(1.5rem, 7vw, 36px);
+        letter-spacing: -0.01rem;
+      }
+
+      h1 + p {
+        font-size: clamp(1.1rem, 4vw, 21px);
+        color: var(--text-color-body);
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 0.875rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        margin: 1.5em 0 1em;
+      }
+      dt {
+        color: var(--text-color-heading);
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        gap: 0.5em;
+      }
+      dt i {
+        color: var(--text-color-gray);
+        font-style: italic;
+        font-weight: normal;
+      }
+      dd {
+        margin: 0;
+        color: var(--text-color-body);
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        list-style-type: square;
+      }
+
+      a {
+        color: #334155;
+        text-decoration-color: #334155;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+      }
+
+      footer {
+        color: var(--text-color-gray);
+        margin: 3rem 0 1.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Manuel Brandstetter</h1>
+      <p>I am a software developer based in Munich who works on both the front-end and back-end of web applications. I also have a little bit of experience in web design. </p>
+      <hr />
+      <h2>Work Experience</h2>
+      <dl>
+        <dt>inovex GmbH <i>2018 - present</i></dt>
+        <dd>
+          <p>
+            I joined inovex in September 2018 as an intern during my bachelor&apos;s degree, and I&apos;ve stayed on as a working student until I finish my master&apos;s at the end of 2023, becoming a full-time software developer in January 2024.
+          </p>
+          <ul>
+            <li><a href="https://scrumlr.io" target="_blank">Scrumlr</a></li>
+            <li><a href="https://www.mission-control-paramedic.de/" target="_blank">Mission Control Paramedic</a></li>
+          </ul>
+        </dd>
+      </dl>
+      <hr />
+      <h2>Education</h2>
+      <dl>
+        <dt>Technical University of Munich <i>2020 - 2023</i></dt>
+        <dd>Master of Science in Informatics</dd>
+        <dt>University of Applied Sciences Landshut <i>2018 - 2020</i></dt>
+        <dd>Bachelor of Science in Informatics</dd>
+      </dl>
+      <hr />
+      <h2>Projects</h2>
+      <dl>
+        <dt>LA Regional Bau</dt>
+        <dd>Designed and implemented a website for a construction company.</dd>
+      </dl>
+      <hr />
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/brandstetterm" target="_blank">GitHub</a></li>
+        <li><a href="https://de.linkedin.com/in/manuel-brandstetter-6a6188152" target="_blank">LinkedIn</a></li>
+      </ul>
+    </main>
+    <footer>
+      Nothing fancy, just plain <code>HTML</code> and <code>CSS</code>.<br/>
+      &copy;2024 Manuel Brandstetter. All rights reserved.
+    </footer>
+  </body>
+</html>
