@@ -33,7 +33,7 @@
       body {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 0 1.5rem;
+        padding: 0 var(--spacing-xl);
         font-size: 1rem;
         background-color: var(--background);
         font-family: "PT Serif", serif;
@@ -46,12 +46,12 @@
 
       h1, h2 {
         color: var(--text-color-heading);
-        margin: 1.5em 0 0.5em;
       }
 
       h1 {
         font-size: clamp(1.5rem, 7vw, 36px);
         letter-spacing: -0.01rem;
+        margin: var(--spacing-3xl) 0 var(--spacing-md);
       }
 
       h1 + p {
@@ -65,14 +65,15 @@
         font-weight: normal;
         text-transform: uppercase;
         letter-spacing: 0.14em;
-        margin: 1.5em 0 1em;
+        margin: var(--spacing-lg) 0 var(--spacing-md)
       }
       dt {
         color: var(--text-color-heading);
         font-size: 1rem;
         font-weight: bold;
         display: flex;
-        gap: 0.5em;
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
       }
       dt i {
         color: var(--text-color-gray);
@@ -82,7 +83,7 @@
       dd {
         margin: 0;
         color: var(--text-color-body);
-        margin-bottom: 1.5rem;
+        margin-bottom: var(--spacing-md);
       }
 
       ul {
@@ -98,7 +99,7 @@
 
       footer {
         color: var(--text-color-gray);
-        margin: 3rem 0 1.5rem 0;
+        margin: var(--spacing-3xl) 0 var(--spacing-lg); 
       }
     </style>
   </head>
