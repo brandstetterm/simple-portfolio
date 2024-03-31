@@ -10,10 +10,12 @@
       @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
       :root {
-        --text-color-heading: #1f1f1f;
-        --text-color-body: #334155;
-        --text-color-gray: #6b7280;
-        --background: #f5f5f4;
+        /* Since I'm a big fan of Catppuccin, I've decided to use it */
+        /* Catppuccin Latte */
+        --text-color-heading: #1e66f5;
+        --text-color-body: #4c4f69;
+        --text-color-gray: #6c6f85;
+        --background: #eff1f5;
 
         --spacing-xs: 4px;
         --spacing-sm: 8px;
@@ -22,6 +24,15 @@
         --spacing-xl: 32px;
         --spacing-2xl: 40px;
         --spacing-3xl: 48px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* Catppuccin Macchiato */
+          --text-color-heading: #8aadf4;
+          --text-color-body: #cad3f5;
+          --text-color-gray: #a5adcb;
+          --background: #24273a;
+        }
       }
 
       * {
@@ -37,6 +48,7 @@
         font-size: 1rem;
         background-color: var(--background);
         font-family: "PT Serif", serif;
+        color: var(--text-color-body);
       }
 
       main {
@@ -82,7 +94,6 @@
       }
       dd {
         margin: 0;
-        color: var(--text-color-body);
         margin-bottom: var(--spacing-md);
       }
 
@@ -91,8 +102,8 @@
       }
 
       a {
-        color: #334155;
-        text-decoration-color: #334155;
+        color: inherit;
+        text-decoration-color: var(--text-color-body);
         text-decoration-thickness: 1px;
         text-underline-offset: 2px;
       }
