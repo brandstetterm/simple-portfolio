@@ -44,11 +44,16 @@
       body {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 0 var(--spacing-xl);
+        padding: 0 var(--spacing-md);
         font-size: 1rem;
         background-color: var(--background);
         font-family: "PT Serif", serif;
         color: var(--text-color-body);
+      }
+      @media (min-width: 480px) {
+        body {
+          padding: 0 var(--spacing-xl);
+        }
       }
 
       main {
